@@ -20,16 +20,16 @@ Suppose we have payment records :
     ws = [5, 7, 6]
     x = 13
 
-If we sort the payment record according to the pay_time vs, we obtain a sorted collection of payment records:
+If we sort the payment record according to the pay_time `vs`, we obtain a sorted collection of payment records:
     
     vs' = [1, 2, 3]
     ws' = [7, 5, 6]
 
-, then, we compute a total received amount after each payment :
+Then, we compute a total received amount after each payment :
 
     total = [7, (7+5), (7+5+6)] = [7, 12, 18]
          
-The first total amount that is greater than `x=13` is `18`, which corresponds to pay time `3`. Thus the answer is 3 for x = 13.
+The first total amount that is greater than `x=13` is `18`, which corresponds to pay time `3`. Thus, the answer is `3` for `x = 13`.
 
 ## Performance
 Given `k` queries, answer them within `O(n(ln(k)))` time complexity
