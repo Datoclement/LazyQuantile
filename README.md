@@ -9,6 +9,10 @@ Given an unordered collection of customer payment records :
 
 For a query with a number `x`, we want to find the record after which our total received amount surpasses x.
 
+## Assumption
+
+To simplify, all pay times are supposed to be distinct, i.e., `assert len(set(vs)) == len(vs)` 
+
 ## Example
 Suppose we have payment records :
 
